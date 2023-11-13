@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+	<Cities2_Location>G:\SteamLibrary\steamapps\common\Cities Skylines II</Cities2_Location>
+	<UnstrippedUnity_Location>G:\SteamLibrary\steamapps\common\Cities Skylines II\unstripped</UnstrippedUnity_Location>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Game">
+      <HintPath>$(Cities2_Location)\Cities2_Data\Managed\Game.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+	<Reference Include="Colossal.Core">
+		<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Colossal.Core.dll</HintPath>
+		<Private>False</Private>
+	</Reference>
+	<Reference Include="Unity.Entities">
+		<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Unity.Entities.dll</HintPath>
+		<Private>False</Private>
+	</Reference>
+	<Reference Include="Unity.Mathematics">
+		<HintPath>$(Cities2_Location)\Cities2_Data\Managed\Unity.Mathematics.dll</HintPath>
+		<Private>False</Private>
+	</Reference>
+	<Reference Include="UnityEngine">
+		<HintPath>$(UnstrippedUnity_Location)\UnityEngine.dll</HintPath>
+		<Private>False</Private>
+	</Reference>
+	<Reference Include="UnityEngine.CoreModule">
+		<HintPath>$(UnstrippedUnity_Location)\UnityEngine.CoreModule.dll</HintPath>
+		<Private>False</Private>
+	</Reference>
+  </ItemGroup>
+</Project>
