@@ -5,13 +5,13 @@ using Game.Tools;
 using Unity.Entities;
 using Unity.Mathematics;
 
-namespace SAM
+namespace SAM.Systems
 {
     /// <summary>
     /// A helper class for simplifying raycasting in the game.
     /// This class encapsulates the raycasting logic, making it easier to use within the game.
     /// </summary>
-    public class RaycastHelperSystem : GameSystemBase
+    public class SimpleRaycastSystem : GameSystemBase
     {
         private ToolRaycastSystem _toolRaycastSystem;
 
