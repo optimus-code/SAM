@@ -35,5 +35,9 @@
 		<HintPath>$(UnstrippedUnity_Location)\UnityEngine.CoreModule.dll</HintPath>
 		<Private>False</Private>
 	</Reference>
+	<Reference Include="UnityEngine.ImageConversionModule">
+		<HintPath>$(UnstrippedUnity_Location)\UnityEngine.ImageConversionModule.dll</HintPath>
+		<Private>False</Private>
+	</Reference>
   </ItemGroup>
 </Project>

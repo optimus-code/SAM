@@ -2,12 +2,12 @@
 using System.IO;
 using System.Reflection;
 
-namespace SAM.Helpers
+namespace SAM.IO
 {
     /// <summary>
     /// A utility class for loading embedded resources from assemblies.
     /// </summary>
-    public static class EmbeddedResources
+    public static class EmbeddedResource
     {
         // Holds a reference to the executing assembly.
         private static readonly Assembly _assembly = Assembly.GetExecutingAssembly( );

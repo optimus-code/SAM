@@ -1,14 +1,23 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Reflection;
 using UnityEngine;
 
-namespace SAM.Helpers
+namespace SAM.IO
 {
     /// <summary>
     /// Commonly used paths for mod development
     /// </summary>
     public static class UserPath
     {
+        /// <summary>
+        /// Get the streaming assets path
+        /// </summary>
+        /// <remarks>
+        /// (Points to 'Cities2_Data\StreamingAssets'.)
+        /// </remarks>
+        public static string StreamingAssets => Application.streamingAssetsPath;
+
         /// <summary>
         /// Get Data path
         /// </summary>
@@ -32,5 +41,10 @@ namespace SAM.Helpers
         /// (Will typically be the DLL path that is calling this code, e.g. a mod.)
         /// </remarks>
         public static string Caller => Path.GetDirectoryName( Assembly.GetCallingAssembly( ).Location );
+
+        /// <summary>
+        /// On Windows, points to the documents path
+        /// </summary>
+        public static string Documents => Environment.GetFolderPath( Environment.SpecialFolder.MyDocuments );
     }
 }
